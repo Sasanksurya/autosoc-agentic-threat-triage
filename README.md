@@ -7,9 +7,6 @@ via RAG, and proposes — but never executes — response actions without human 
 Built as a hands-on exploration of **agentic AI applied to security operations**,
 inspired by production tools like CrowdStrike Charlotte AI and Microsoft Security Copilot.
 
-![AutoSOC Dashboard](docs/screenshot_dashboard.png)
-*(add your dashboard screenshot here — see "Adding your screenshot" below)*
-
 ---
 
 ## Why this project
@@ -179,5 +176,3 @@ prompt-injection case with its High severity result), save it as
 ---
 
 *Built as a portfolio project exploring agentic AI applied to security operations.*
-#   a u t o s o c - a g e n t i c - t h r e a t - t r i a g e  
- 
