@@ -1,0 +1,19 @@
+# Secrets -- never commit these
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated/large data (regenerate with build_vector_db.py instead of committing)
+data/chroma_db/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/

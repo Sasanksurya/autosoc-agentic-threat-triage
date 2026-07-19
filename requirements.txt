@@ -1,0 +1,14 @@
+chromadb
+scikit-learn
+sentence-transformers
+crewai
+litellm
+streamlit
+
+# IMPORTANT: chromadb's on-disk format can break between versions.
+# If you install new packages later and get a "PanicException" or similar
+# error loading the vector DB, just delete data/chroma_db/ and rerun
+# build_vector_db.py to rebuild it fresh against the current chromadb version.
+
+# LLM: this project uses Groq (https://console.groq.com/keys) via LiteLLM.
+# Set GROQ_API_KEY as an environment variable before running crew.py.

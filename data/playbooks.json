@@ -1,0 +1,42 @@
+{
+  "playbooks": [
+    {
+      "trigger_tactics": ["execution", "persistence"],
+      "severity_min": "medium",
+      "action": "Isolate host from network (EDR containment)",
+      "description": "Prevents further command execution or lateral movement while investigation continues."
+    },
+    {
+      "trigger_tactics": ["credential-access"],
+      "severity_min": "medium",
+      "action": "Force password reset for affected account(s) + revoke active sessions",
+      "description": "Limits damage from stolen or exposed credentials."
+    },
+    {
+      "trigger_tactics": ["exfiltration"],
+      "severity_min": "high",
+      "action": "Block destination IP/domain at firewall + isolate host",
+      "description": "Stops ongoing data loss immediately."
+    },
+    {
+      "trigger_tactics": ["lateral-movement"],
+      "severity_min": "high",
+      "action": "Isolate host + audit all accounts/hosts touched by the lateral movement tool",
+      "description": "Contains spread and scopes the true blast radius."
+    },
+    {
+      "trigger_tactics": ["defense-evasion"],
+      "severity_min": "medium",
+      "action": "Escalate to Tier 2 analyst for manual log review",
+      "description": "Evasion techniques often indicate a more sophisticated actor; needs human judgment."
+    },
+    {
+      "trigger_tactics": ["discovery", "collection"],
+      "severity_min": "low",
+      "action": "Monitor + log only, no immediate action",
+      "description": "Reconnaissance-stage activity; often benign admin tooling, but worth tracking."
+    }
+  ],
+  "default_action": "Escalate to Tier 2 analyst for manual review",
+  "note": "This is a simplified static playbook library for demo purposes. A production system would tie into a real SOAR platform."
+}
