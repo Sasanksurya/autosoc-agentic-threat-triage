@@ -2,7 +2,7 @@
 
 A multi-agent AI SOC (Security Operations Center) analyst that investigates security
 alerts autonomously, grounds its reasoning in real MITRE ATT&CK threat intelligence
-via RAG, and proposes — but never executes — response actions without human approval.
+via RAG, and proposes  but never executes  response actions without human approval.
 
 Built as a hands-on exploration of **agentic AI applied to security operations**,
 inspired by production tools like CrowdStrike Charlotte AI and Microsoft Security Copilot.
